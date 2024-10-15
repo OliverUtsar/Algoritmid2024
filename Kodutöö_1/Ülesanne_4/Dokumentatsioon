@@ -1,1 +1,1 @@
-Ülesande koostasid Patrick Välja ja Oliver Utsar. 
+Ülesande koostasid Patrick Välja ja Oliver Utsar. Kasutasime kahendotsingu ehk binaarotsingu otsingualgoritmi. Defineerisime massiivi alguse binaararvu ja lõpp binaararvu. Seejärel poolitab massiivi kaheks võrdseks osaks ning hakkab sihtväärtust võrdlema massiivi keskmise elemendiga, kui need pole võrdsed, kõrvaldatakse pool, kus sihtväärtus olla ei saa. Otsing jätkub järelejäänud poolel seni, kuni see on edukas. Kui aga sihtväärtust massiivis pole, siis annab teada, et sellist väärtust ei leitud.
