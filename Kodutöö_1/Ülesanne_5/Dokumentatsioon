@@ -1,1 +1,3 @@
-
+Lõime puu struktuuri, pidades silmas ettevõtluse positsioone. Puu koosneb 12-st sõlmest. Võtsime põhjaks toidukaubade jaemüügiketi ettevõtte struktuuri. See koosneb ettevõtte juhatuse esimehest ja aseesimehest. Esimees juhib juhatuse tegevust ning aseesimees vajadusel asendab esimeest. Juhid korraldavad oma valdkonna ülesannete täitmist ning spetsialistid ja töötajad täidavad ülesandeid. Juhid peavad esimehele aru andma.
+Graafil puudub kindel juur ehk alguspunkt, puul aga on kindel põhijuur ehk meie puu puhul on selleks juhatuse esimees. Puud on alati ühendatud, aga graafid ei pruugi olla.
+Näiteks sotsiaalvõrgustik on graaf, sest inimesed on sõprussõlmedena ühendatud ning ei pruugi olla puu, sest mitu sõpra võivad olla sõbrad sama sõbraga.
