@@ -1,1 +1,1 @@
-Ülesan
+Ülesande koostasid Patrick Välja ja Oliver Utsar. Kirjutasime funktsiooni ning defineerisime algul baasjuhud, et kui n on 1 ja 0 ning seejärel lisasime funktsiooni rekursiivse lähenemise, mis avaldub valemiga fibonacci(n-1) + fibonacci(n-2).
