@@ -1,0 +1,60 @@
+class Person:
+    def __init__(self, name):
+        # Iga inimene saab nime
+        self.name = name
+        self.next = None  # Järgmise inimese viit
+
+    def __repr__(self):
+        # Tagastab inimese nime, kui seda objekti väljundis kutsutakse
+        return f"Person({self.name})"
+
+
+class PeopleQueue:
+    def __init__(self):
+        # Järjekorra esimene ja viimane element (FIFO põhimõte)
+        self.front = None
+        self.rear = None
+        self.size = 0
+
+    def join_queue(self, person):
+        # Kui järjekord on tühi, siis esimene ja viimane inimene on sama
+        if self.rear is None:
+            self.front = self.rear = person
+        else:
+            # Lisa inimene järjekorra lõppu (rear)
+            self.rear.next = person
+            self.rear = person
+        self.size += 1
+
+    def serve_person(self):
+        # Eemaldame ja tagastame esimese inimese (FIFO järjekord)
+        if self.is_empty():
+            raise IndexError("Serve from empty queue")
+        
+        # Võtame esimese inimese (front) ja liigume järgmisele
+        served_person = self.front
+        self.front = self.front.next
+
+        # Kui järjekord saab tühjaks
+        if self.front is None:
+            self.rear = None
+
+        self.size -= 1
+        return served_person
+
+    def is_empty(self):
+        # Kontrollime, kas järjekord on tühi
+        return self.front is None
+
+    def queue_size(self):
+        # Tagastame järjekorra suuruse
+        return self.size
+
+    def view_queue(self):
+        # Näitame kõiki inimesi järjekorras
+        people = []
+        current = self.front
+        while current:
+            people.append(current.name)
+            current = current.next
+        return people
