@@ -1,60 +1,60 @@
-class Person:
-    def __init__(self, name):
-        # Iga inimene saab nime
-        self.name = name
-        self.next = None  # Järgmise inimese viit
+class Inimene:
+    def __init__(self, nimi):
+        # Igal inimesel on nimi
+        self.nimi = nimi
+        self.järgmine = None  # Viide järgmisele inimesele järjekorras
 
     def __repr__(self):
-        # Tagastab inimese nime, kui seda objekti väljundis kutsutakse
-        return f"Person({self.name})"
+        # Tagastab inimese nime
+        return f"Inimene({self.nimi})"
 
 
-class PeopleQueue:
+class InimesteJärjekord:
     def __init__(self):
-        # Järjekorra esimene ja viimane element (FIFO põhimõte)
-        self.front = None
-        self.rear = None
-        self.size = 0
+        # Järjekorra esimene ja viimane inimene
+        self.esimene = None
+        self.viimane = None
+        self.suurus = 0
 
-    def join_queue(self, person):
+    def liitu_järjekorda(self, inimene):
         # Kui järjekord on tühi, siis esimene ja viimane inimene on sama
-        if self.rear is None:
-            self.front = self.rear = person
+        if self.viimane is None:
+            self.esimene = self.viimane = inimene
         else:
-            # Lisa inimene järjekorra lõppu (rear)
-            self.rear.next = person
-            self.rear = person
-        self.size += 1
+            # Lisa inimene järjekorra lõppu
+            self.viimane.jargmine = inimene
+            self.viimane = inimene
+        self.suurus += 1
 
-    def serve_person(self):
-        # Eemaldame ja tagastame esimese inimese (FIFO järjekord)
-        if self.is_empty():
-            raise IndexError("Serve from empty queue")
+    def teeninda_inimene(self):
+        # Teenindame ja eemaldame esimese inimese järjekorrast
+        if self.kas_tühi():
+            raise IndexError("Teenindamine tühjast järjekorrast")
         
-        # Võtame esimese inimese (front) ja liigume järgmisele
-        served_person = self.front
-        self.front = self.front.next
+        # Võtame esimese inimese ja liigume järgmisele
+        teenindatud_inimene = self.esimene
+        self.esimene = self.esimene.jargmine
 
-        # Kui järjekord saab tühjaks
-        if self.front is None:
-            self.rear = None
+        # Kui järjekord saab tühjaks, määrame viimane väärtuseks None
+        if self.esimene is None:
+            self.viimane = None
 
-        self.size -= 1
-        return served_person
+        self.suurus -= 1
+        return teenindatud_inimene
 
-    def is_empty(self):
+    def kas_tühi(self):
         # Kontrollime, kas järjekord on tühi
-        return self.front is None
+        return self.esimene is None
 
-    def queue_size(self):
+    def järjekorra_suurus(self):
         # Tagastame järjekorra suuruse
-        return self.size
+        return self.suurus
 
-    def view_queue(self):
+    def vaata_järjekorda(self):
         # Näitame kõiki inimesi järjekorras
-        people = []
-        current = self.front
-        while current:
-            people.append(current.name)
-            current = current.next
-        return people
+        inimesed = []
+        praegune = self.esimene
+        while praegune:
+            inimesed.append(praegune.nimi)
+            praegune = praegune.jargmine
+        return inimesed
