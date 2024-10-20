@@ -1,1 +1,11 @@
-
+Ülesande koostasid Patrick Välja ja Oliver Utsar. Lõime FIFO andmestruktuuri koodi, mis toimib inimeste järjekorras teenindamise põhjal, kus esimest inimest järjekorrast teenindatakse esimesena.
+Lõime 2 klassi:
+1. Klass (Inimene): Kus puhtalt näitame inimeste nimed ning inimesed järjekorras (massiiv)
+  nimi: Inimese nimi.
+  järgmine: Viide järgmisele inimesele järjekorras.
+2. Klass (Inimeste_järjekord): Järjekorra andmestruktuur (FIFO), kus teenindatakse esimesena esimest inimest järjekorras.
+  liitu_järjekorda(inimene): Lisab inimese järjekorra lõppu.
+  teeninda_inimene(): Eemaldab ja tagastab esimese inimese järjekorrast.
+  kas_tühi(): Kontrollib, kas järjekord on tühi.
+  järjekorra_suurus(): Tagastab järjekorra suuruse.
+  vaata_järjekorda(): Näitab praegust järjekorras olevate inimeste nimekirja.
