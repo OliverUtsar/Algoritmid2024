@@ -1,0 +1,22 @@
+Sisestamise (liitu_järjekorda) ajaline keerukus
+Toimingud:
+Lisame uue inimese järjekorra lõppu.
+Meil on viide (viimane), mis näitab järjekorra viimast inimest.
+Uue inimese lisamiseks, muudame viimane.järgmine viitama uuele inimesele.
+Värskendame (viimane), et see viitaks äsja lisatud inimesele.
+Ajaline keerukus:
+Viide viimasele inimesele uuendatakse ühe viitega (viimane.järgmine = inimene).
+Lõpuks määratakse uus inimene järjekorra lõppu (self.viimane = inimene).
+Ajaline keerukus: O(1) (konstantne), sest lisamine võtab alati konstantse aja ning järjekorra suurus ei mõjuta toimingute arvu.
+
+Kustutamise (teeninda_inimene) ajaline keerukus
+Toimingud:
+Eemaldame järjekorra algusest esimese inimese.
+Viide (esimene) näitab järjekorra esimest inimest.
+Uue inimese teenindamisel salvestame esimese inimese viite, et seda hiljem tagastada.
+Värskendame viite (esimene) viitama järgmisele inimesele järjekorras.
+Kui see muudab järjekorra tühjaks, määrame viite (viimane) väärtuseks None.
+Ajaline keerukus:
+See on samuti konstantne operatsioon:
+Eemaldame esimese inimese viite (self.esimene = self.esimene.järgmine).
+Ei ole vaja läbi käia kogu järjekorda.
