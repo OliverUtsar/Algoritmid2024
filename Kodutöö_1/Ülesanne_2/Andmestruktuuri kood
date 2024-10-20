@@ -9,7 +9,7 @@ class Inimene:
         return f"Inimene({self.nimi})"
 
 
-class InimesteJärjekord:
+class Inimeste_Järjekord:
     def __init__(self):
         # Järjekorra esimene ja viimane inimene
         self.esimene = None
@@ -22,7 +22,7 @@ class InimesteJärjekord:
             self.esimene = self.viimane = inimene
         else:
             # Lisa inimene järjekorra lõppu
-            self.viimane.jargmine = inimene
+            self.viimane.järgmine = inimene
             self.viimane = inimene
         self.suurus += 1
 
@@ -33,7 +33,7 @@ class InimesteJärjekord:
         
         # Võtame esimese inimese ja liigume järgmisele
         teenindatud_inimene = self.esimene
-        self.esimene = self.esimene.jargmine
+        self.esimene = self.esimene.järgmine
 
         # Kui järjekord saab tühjaks, määrame viimane väärtuseks None
         if self.esimene is None:
@@ -56,5 +56,5 @@ class InimesteJärjekord:
         praegune = self.esimene
         while praegune:
             inimesed.append(praegune.nimi)
-            praegune = praegune.jargmine
+            praegune = praegune.järgmine
         return inimesed
