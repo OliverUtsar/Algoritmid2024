@@ -1,7 +1,42 @@
 Sortimisloend on: [29,15,56,77,18]
 Selection sort ehk valikmeetodil põhinev sorteerimisalgoritm, võrdleb elemente ning jagab loendi sorteeritud ja sorteerimata osaks.
 Iga iteratsiooni ajal otsitakse sorteerimata osast kõige väiksem element ja liigutatakse see sorteeritud osasse.
-_Iteratsioon 1:_
+Iteratsioon 1:
 Sorteeritud osa on alguses tühilist ehk []
 Sorteerimata osa on terve loend ehk [29,15,56,77,18]
-Võrdleb esimest
+Võrdleb esimest elementi (29) kõigi ülejäänud elementidega, et leida väikseim:
+29 ja 15 --> väikseim on 15
+15 ja 56 --> väikseim on ikka 15
+15 ja 77 --> väikseim on ikka 15
+15 ja 18 --> väikseim on ikka 15
+Vahetab esimese elemendi (29) väikseimaga ehk 15-ga ning paigutab sorteeritud ossa ehk [15]
+Loend pärast vahetust: [15,29,56,77,18]
+Iteratsioon 2:
+Sorteeritud osa on nüüd [15]
+Sorteerimata osa on nüüd [29,56,77,18]
+Võrdleb teist elementi (29) teiste elementidega:
+29 ja 56 --> väiksem on 29
+29 ja 77 --> väiksem on 29
+29 ja 18 --> väiksem on nüüd 18
+Vahetab teise elemendi (29) väiksemaga ehk 18-ga ning paigutab sorteeritud ossa ehk [15,18]
+Loend pärast vahetust: [15,18,56,77,29]
+Iteratsioon 3:
+Sorteeritud osa on nüüd [15,18]
+Sorteerimata osa on nüüd [56,77,29]
+Võrdleb kolmandat elementi (56) ülejäänud elementidega:
+56 ja 77 --> väiksem on 56
+56 ja 29 --> väiksem on 29
+Vahetab kolmanda elemendi (56) väiksemaga ehk 29-ga ning paigutab sorteeritud ossa ehk [15,18,29]
+Loend pärast vahetust: [15,18,29,77,56]
+Iteratsioon 4:
+Sorteeritud osa on nüüd [15,18,29]
+Sorteerimata osa on nüüd [77,56]
+Võrdleme neljandat elementi (77) ja otsime väiksema elemendi sorteerimata osast (56):
+77 ja 56 --> väiksem on 56
+Vahetab neljanda elemendi (77) väiksemaga ehk 56-ga ning paigutab sorteeritud ossa ehk [15,18,29,56]
+Loend pärast vahetust: [15,18,29,56,77]
+Iteratsioon 5:
+Sorteeritud osa on [15,18,29,56]
+Sorteerimata osa on [77]
+Kuna sorteerimata osas on ainult üks element, on loend nüüd sorteeritud ning lisab selle elemendi sorteeritud osa lõppu
+Loend pärast lisamist [15,18,29,56,77]
