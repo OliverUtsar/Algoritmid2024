@@ -1,1 +1,7 @@
-
+Sortimisloend on: [29,15,56,77,18]
+Selection sort ehk valikmeetodil põhinev sorteerimisalgoritm, võrdleb elemente ning jagab loendi sorteeritud ja sorteerimata osaks.
+Iga iteratsiooni ajal otsitakse sorteerimata osast kõige väiksem element ja liigutatakse see sorteeritud osasse.
+**Iteratsioon 1:**
+Sorteeritud osa on alguses tühilist ehk []
+Sorteerimata osa on terve loend ehk [29,15,56,77,18]
+Võrdleb esimest
