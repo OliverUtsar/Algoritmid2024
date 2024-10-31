@@ -1,1 +1,18 @@
+a) Sortimisalgoritm on stabiilne, kui ta säilitab sama väärtusega elementide algse järjestuse.
+Teisisõnu, kui loendis on kaks või enam identset elementi, siis pärast sortimist jäävad need elemendid samasse järjekorda, milles nad olid enne sortimist.
+
+  Kasutan näiteks Insertion Sorti kuna see on stabiilne sortimisalgoritm.
+  Nt: Loend (5a, 5b, 2, 3, 5c, 1) 
+  Esimene samm:
+  (1, 5a, 5b, 2, 3, 5c)
+  Teine samm: Järjestab elemendid väärtuste järgi
+  (1, 2, 3, 5a, 5b, 5c)
+
+b) Sortimisalgoritmi adaptiivsust kirjeldab algoritmi saab kasutada juba osaliselt sorteeritud loendi struktuuri ja
+sortida sellist loendit kiiremini kui täiesti juhuslikult sortimata loendit.
+Adaptiivne algoritm on efektiivsem, kui loend on juba kas osaliselt sorteeritud või sisaldab järjestatud alamloendeid.
+See tähendab, et adaptiivse algoritmi ajakompleksus paraneb, kui loendis on olemas mingi korrastatus.
+
+Adaptiivseteks sortimisalgoritmideks peetakse Insertion ja ka mõnes mõttes ka Bubble sorti,
+kui on algselt juba korrastatud või sorteeritud leond.
 
