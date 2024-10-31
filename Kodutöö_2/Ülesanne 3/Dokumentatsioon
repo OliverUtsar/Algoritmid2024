@@ -33,4 +33,6 @@ Vaatleb elementi (7) ja võrdleb seda iga vasakpoolse elemendiga, seni kuni leia
 Kuna 7 on suurem kui 6 ja väiksem kui 11, siis paigutab ta elemendi (7) elementide (6) ja (11) vahele.
 Sorteeritud loend on [5,6,7,11,12,13]
 
+Insertion Sort on efektiivsem osaliselt sorteeritud loendite korral.
+Ta liigub läbi sorteeritud osa ja teeb vaid väheseid vahetusi, kui elemendid on juba ligilähedaselt õiges järjekorras.
 
