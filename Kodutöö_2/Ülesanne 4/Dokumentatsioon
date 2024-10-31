@@ -1,1 +1,5 @@
+a) Kõigil eelmainitud sortimisalgoritmidel on halvimal juhul ajakompleksus O(n^2). Parimal juhul on Bubble ja
+Insertion sort paremad kui Selection sort.
 
+b) Counting sort algoritm oleks kiirem ja tõhusam, kuna Counting Sort töötab ajakompleksusega 𝑂(𝑛+𝑘), kus 𝑘
+on väärtuste vahemik. Kuna kõik elemendid jäävad siinkohal vahemikku 1 kuni 100, siis on k suhteliselt väike.
