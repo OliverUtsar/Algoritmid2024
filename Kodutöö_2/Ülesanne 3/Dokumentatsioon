@@ -1,1 +1,36 @@
+Insertion sort on sorteerimisalgoritm, mis võrdleb parempoolset elementi vasakpoolsega ning vahetab elemente väikseim vasakule, seni kuni enam vahetada ei saa.
+See sorteerimisalgoritm on efektiivne väikeste andmekogumite puhul.
+Loend on [12,11,13,5,6,7] ning sellest on näha, et see on osaliselt sorteeritud.
+1. Samm: 
+Vaatleb elementi (11) ning võrdleb elemendiga (12):
+Kuna 11 on väiksem kui 12, siis vahetab kohad ning vasakulepoole viib väiksema elemendi:
+Loend on [11,12,13,5,6,7]
+2. Samm:
+Vaatleb elementi (13) ning võrdleb vasakpoolse elemendiga ehk 12-ga.
+Ei muuda midagi, sest 12 on väiksem kui 13 ja on juba sorteeritud.
+3. Samm:
+Vaatleb elementi (5) ja võrdleb seda iga vasakpoolse elemendiga, kuni saab vahetuse teha:
+5 ja 13 --> 5 on väiksem
+5 ja 12 --> 5 on väiksem
+5 ja 11 --> 5 on väiksem
+5 on nendest kõige väiksem, seega paigutab ta kõige vasakpoolsemaks elemendiks.
+Loend on [5,11,12,13,6,7]
+4. Samm:
+Vaatleb elementi (6) ja võrdleb seda vasakpoolsete elementidega, kuni leiab koha:'
+6 ja 13 --> 6 on väiksem
+6 ja 12 --> 6 on väiksem
+6 ja 11 --> 6 on väiksem
+6 ja 5 --> 5 on väiksem
+Kuna 6 on suurem kui 5 ja väiksem kui 11, siis paigutab ta elemendi (6) elemendi (5) ja elemendi (11) vahele.
+Loend on [5,6,11,12,13,7]
+5. Samm:
+Vaatleb elementi (7) ja võrdleb seda iga vasakpoolse elemendiga, seni kuni leiab õige koha:
+7 ja 13 --> 7 on väiksem
+7 ja 12 --> 7 on väiksem
+7 ja 11 --> 7 on väiksem
+7 ja 6 --> 7 on suurem
+7 ja 5 --> 7 on suurem
+Kuna 7 on suurem kui 6 ja väiksem kui 11, siis paigutab ta elemendi (7) elementide (6) ja (11) vahele.
+Sorteeritud loend on [5,6,7,11,12,13]
+
 
