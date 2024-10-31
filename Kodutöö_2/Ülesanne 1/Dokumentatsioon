@@ -1,1 +1,38 @@
+Bubble Sort:
+Esimene samm:
+Võrdleb 64 ja 34 → Vahetus: [34, 64, 25, 12, 22, 11, 90]
+Võrdleb 64 ja 25 → Vahetus: [34, 25, 64, 12, 22, 11, 90]
+Võrdleb 64 ja 12 → Vahetus: [34, 25, 12, 64, 22, 11, 90]
+Võrdleb 64 ja 22 → Vahetus: [34, 25, 12, 22, 64, 11, 90]
+Võrdleb 64 ja 11 → Vahetus: [34, 25, 12, 22, 11, 64, 90]
+Võrdleb 64 ja 90 → Ei vaheta
+Esimese sammu tulemus: [34, 25, 12, 22, 11, 64, 90]
 
+Teine samm:
+Võrdleb 34 ja 25 → Vahetus: [25, 34, 12, 22, 11, 64, 90]
+Võrdleb 34 ja 12 → Vahetus: [25, 12, 34, 22, 11, 64, 90]
+Võrdleb 34 ja 22 → Vahetus: [25, 12, 22, 34, 11, 64, 90]
+Võrdleb 34 ja 11 → Vahetus: [25, 12, 22, 11, 34, 64, 90]
+Võrdleb 34 ja 64 → Ei vaheta
+Teise sammu tulemus: [25, 12, 22, 11, 34, 64, 90]
+
+Kolmas samm:
+Võrdleb 25 ja 12 → Vahetus: [12, 25, 22, 11, 34, 64, 90]
+Võrdleb 25 ja 22 → Vahetus: [12, 22, 25, 11, 34, 64, 90]
+Võrdleb 25 ja 11 → Vahetus: [12, 22, 11, 25, 34, 64, 90]
+Võrdleb 25 ja 34 → Ei vaheta
+Kolmanda sammu tulemus: [12, 22, 11, 25, 34, 64, 90]
+
+Neljas samm:
+Võrdleb 12 ja 22 → Ei vaheta
+Võrdleb 22 ja 11 → Vahetus: [12, 11, 22, 25, 34, 64, 90]
+Võrdleb 22 ja 25 → Ei vaheta
+Neljanda sammu tulemus: [12, 11, 22, 25, 34, 64, 90]
+
+Viies samm:
+Võrdleb 12 ja 11 → Vahetus: [11, 12, 22, 25, 34, 64, 90]
+Võrdleb 12 ja 22 → Ei vaheta
+Viienda sammu tulemus: [11, 12, 22, 25, 34, 64, 90]
+
+Kuna kõik on sorteeritud, siis pole rohkem samme vaja läbida.
+Lõpp tulemus: [11, 12, 22, 25, 34, 64, 90].
