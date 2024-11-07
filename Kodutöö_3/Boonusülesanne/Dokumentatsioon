@@ -5,3 +5,5 @@ Fibonacci otsingualgoritmide sammud:
   3. Mittevajalike elementide eemaldamine
 
 Fibonacci otsingualgoritm on efektiivne suurte ja sorteeritud andmekogumite puhul.
+Fibonacci otsingualgoritmi võib kasutada seal, kus on mälupiirangud, sest otsingualgoritm on mälu sõbralik ning kasutab ainult väikest hulka muutujate salvestamiseks.
+Fibonacci eeliseks võib olla ka see, et see ei jaga massiivi pooleks või teatud osadeks, vaid kasutab Fibonacci arvude järjekorda.
