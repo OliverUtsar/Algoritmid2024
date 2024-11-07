@@ -1,1 +1,41 @@
+Hüpikotsing ehk jump search on otsingualgoritm, mis toimib ainult sorteeritud massiivide puhul.
+Töötab hüppamise teel fikseeritud arv sammude kaupa edasi, selle asemel, et kontrollida iga elementi, kuni leiab ala, kuhu sihtväärtus jääb.
+Pärast hüpet, kui sihtväärtuse võimalik vahemik on leitud, tehakse selles vahemikus lineaarotsing.
+Kui elementi ei ole loendis, otsing lõpeb.
+Ajaline keerukus on O(sqrt{n})
+Ruumiline keerukus on O(1), kuna kõik toimub massiivis endas.
+Mälukeerukus on O(1), kuna lisamälu ei vaja.
 
+Pseudokood:
+Algoritm hüpikotsing:
+    massiiv = []
+    Määrame hüppe suurus m = ruutjuur(massiivi pikkusest)
+    Algusindeks = 0
+
+    Kuni massiivi element on väiksem kui sihtväärtus:
+        Määrame eelmine indeks = Algusindeks
+        Liigu järgmisse kohta hüppe suurusega (Algusindeks = Algusindeks + m)
+
+    #Lineaarne otsing vahemikus eelmine indeks kuni Algusindeks:
+        #Kui element vastab sihtväärtusele:
+        kui arr[i] == target:
+        #Tagasta elementide asukoht
+        tagasta i
+    Kui otsitavat väärtust ei leitud, tagasta -1
+
+Jump Search ehk hüpikotsingu ajakompleksus on O(√n) ning sõltub √n sammu suurusest.
+Seejärel kontrollib väiksemat ala lineaarotsinguga, mille halvim ajakompleksus on samuti O(√n).
+See on efektiivsem kui lineaarotsing.
+Nõuab juba sorteeritud massiivi otsimiseks.
+Ei sobi suurte loendite jaoks.
+
+Binary Search ehk kahendotsing on efektiivsem, kuid nõuab pidevat jagamist pooleks, mis eeldab pidevat mälu.
+Binaarotsingu ajakeerukus on O(log n).
+See ei sobi väikeste andmekogumite jaoks.
+Nõuab sorteeritud loendeid.
+Binaarotsing on efektiivsem kui hüpikotsing.
+
+Linear Search ajakompleksus on O(n), mis on kõige suurem nendest kolmest, kuna iga elementi tuleb kontrollida ükshaaval.
+Töötab ka sorteerimata andmete puhul.
+Kiirem väiksemate loendite puhul.
+Sorteeritud andmete puhul aeglasem kui teised algoritmid ning on ebaefektiivne suurte loendite puhul.
