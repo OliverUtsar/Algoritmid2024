@@ -1,0 +1,13 @@
+def binary_search(arr, target):
+    vasak, parem = 0, len(arr) - 1
+    while vasak <= parem:
+        keskmine = (vasak + parem) // 2
+        if arr[keskmine] == target:
+            return keskmine
+        # Target leitud
+        elif arr[keskmine] < target:
+            vasak = keskmine + 1
+        else:
+            parem = keskmine - 1
+    return -1
+    # Target ei ole leitud
