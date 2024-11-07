@@ -1,1 +1,7 @@
+Fibonacci otsingualgoritm töötab sorteeritud massiivide ja suurte andmekogumite puhul.
+Fibonacci otsingualgoritmide sammud:
+  1. Fibonacci numbrite algväärtustamine
+  2. Massiivi jagamine
+  3. Mittevajalike elementide eemaldamine
 
+Fibonacci otsingualgoritm on efektiivne suurte ja sorteeritud andmekogumite puhul.
