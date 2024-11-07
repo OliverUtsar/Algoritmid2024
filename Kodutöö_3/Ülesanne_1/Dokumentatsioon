@@ -3,22 +3,22 @@ Alustab algusest ning võrdleb igat elementi sihiväärtusega.
 Ruumikeerukus on igal juhul sellel algoritmil O(1) ehk täiendavat ruumi ei vaja, kuna otsing toimub massiivis endas.
 
 lineaarotsingu algoritmi näide:
-# Massiiv ja sihtväärtus on defineeritud enne funktsiooni
+#Massiiv ja sihtväärtus on defineeritud enne funktsiooni
 massiiv = [3, 5, 7, 9, 11]
 sihtväärtus = 7
 
 def lineaar_otsing(massiiv, sihtväärtus):
-    # Käime läbi iga elemendi(indeksi) massiivis
+    #Käime läbi iga elemendi(indeksi) massiivis
     for indeks in range(len(massiiv)):
-        # Kui leiame otsitava elemendi, prindime selle ja lõpetame funktsiooni
+        #Kui leiame otsitava elemendi, prindime selle ja lõpetame funktsiooni
         if massiiv[indeks] == sihtväärtus:
             print(f"Element {sihtväärtus} leiti indeksilt {indeks}.")
             return
-    # Kui tsükkel lõpetab ilma, et oleks elementi leidnud
+    #Kui tsükkel lõpetab ilma, et oleks elementi leidnud
     else:
         print(f"Elementi {sihtväärtus} ei leitud.")
 
-# Käivitame lineaarotsingu funktsiooni
+#Käivitame lineaarotsingu funktsiooni
 lineaar_otsing(massiiv, sihtväärtus)
 
 Selle lineaarotsingu algoritmi ajakeerukus on O(n), kus n on massiivi elementide arv.
