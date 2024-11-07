@@ -1,0 +1,20 @@
+Ül 2.2
+Võrrelge teoreetilises analüüsis valminud Binary Search'i ja Linear Search'i
+aegkomplekssust.
+
+Binary Search: Töötab ainult sorteeritud array-des. Iga tegevus vähendab otsingut poole võrra (Logaritmiline 
+  aja kompleksus (O(log n)))
+
+Linear Search: Töötab nii sorteeritud ja sorteerimata array-des. Käib läbi iga elemendi eraldi. Aja
+  kompleksus on O(n).
+
+
+Ül 2.3
+Tooge näide stsenaariumist, kus Binary Search on kasulikum kui Linear
+Search, ja selgitage miks. 
+
+Näiteks, kui on vaja leida kindla inimese andmeid andmebaasist, kus on üle 50 000 inimeste andmed.
+  Kui on sorteeritud list siis Binary Search otsib selle loogikaga, et ta pidevalt poolitab otsingu ala ja
+  võib leida tulemuse väga kiirelt ülesse.
+  Aga kui teha seda sama otsingut Linear Searchiga, siis see programm käib iga inimese järjest läbi, mis võtab
+  meeletult palju rohkem ressurssi ja aega.
