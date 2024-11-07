@@ -3,21 +3,27 @@ Alustab algusest ning võrdleb igat elementi sihiväärtusega.
 Ruumikeerukus on igal juhul sellel algoritmil O(1) ehk täiendavat ruumi ei vaja, kuna otsing toimub massiivis endas.
 
 lineaarotsingu algoritmi näide:
-
 # Massiiv ja sihtväärtus on defineeritud enne funktsiooni
-arr = [3, 5, 7, 9, 11]
-target = 7
+massiiv = [3, 5, 7, 9, 11]
+sihtväärtus = 7
 
 def lineaar_otsing(massiiv, sihtväärtus):
-    # Käime läbi iga elemendi massiivis
-    for index in range(len(arr)):
+    # Käime läbi iga elemendi(indeksi) massiivis
+    for indeks in range(len(massiiv)):
         # Kui leiame otsitava elemendi, prindime selle ja lõpetame funktsiooni
-        if arr[index] == target:
-            print(f"Element {target} leiti indeksilt {index}.")
+        if massiiv[indeks] == sihtväärtus:
+            print(f"Element {sihtväärtus} leiti indeksilt {indeks}.")
             return
-    # Kui elementi ei leitud, anname sellest teada
-    print(f"Elementi {target} ei leitud.")
+    # Kui tsükkel lõpetab ilma, et oleks elementi leidnud
+    else:
+        print(f"Elementi {sihtväärtus} ei leitud.")
 
 # Käivitame lineaarotsingu funktsiooni
-linear_search(arr, target)
+lineaar_otsing(massiiv, sihtväärtus)
 
+Selle lineaarotsingu algoritmi ajakeerukus on O(n), kus n on massiivi elementide arv.
+Halvimal juhul peame otsitavat elementi otsima läbi terve massiivi (näiteks kui see on viimane element või kui elementi pole olemas).
+Parimal juhul, kui otsitav element on esimesel positsioonil, on keerukus O(1).
+Lineaarotsing on ebaefektiivne suurte loendite korral.
+Teised otsingualgoritmid on paremad selle poolest, et võimaldavad kiiremat tulemust, kui loend on juba osaliselt järjestatud.
+Lineaarotsingut saab kasutada näiteks lihtsamate otsingute puhul väikestest kogumitest, näiteks sõbralistist sõbra otsimine perekonnanime järgi.
