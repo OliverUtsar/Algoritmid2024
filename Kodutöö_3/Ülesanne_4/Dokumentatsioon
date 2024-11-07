@@ -1,1 +1,33 @@
+Ternary Search ehk kolmikotsing on otsingualgoritm, mis põhineb "jaga ja valitse" põhimõttel.
+Jagab otsinguruumi 3-ks võrdseks osaks.
+Kontrollib, kas nõutav number on ühes kolmest osast.
+Ajaline keerukus on parimal juhul O(1) ja halvimal juhul O(log3 n).
+Lisa mäluruumi ei kasuta.
+Nõuab sorteeritud andmeid.
+Suurte andmekogumite puhul efektiivsem.
+Kasutatakse Google otsingutes.
 
+Pseudokood:
+Algoritm Kolmikotsing(massiiv, sihtväärtus):
+    massiiv = []
+    Vasak = 0 #Massiivi vasakpoolne osa
+    Parem = massiivi pikkus - 1 #Massiivi parempoolne osa
+
+      #Jagame massiivi kolmeks osaks
+      #Arvutame esimese ja teise osa
+      Korrake, kuni Vasak <= Parem:
+        i = Vasak + (Parem - Vasak) // 3  #Esimene osa
+        j = Parem - (Parem - Vasak) // 3  #Teine osa
+        
+        Kui massiiv[i] == sihtväärtus, tagasta i  #Kui leidis sihtväärtuse esimesest osast
+        Kui massiiv[j] == sihtväärtus, tagasta j  #Kui leidis sihtväärtuse teisest osast
+        
+        Kui sihtväärtus < massiiv[i], siis Parem = i - 1  #Otsi vasakust poolest
+        Kui sihtväärtus > massiiv[j], siis Vasak = j + 1  #Otsi paremast poolest
+        Kui sihtväärtus on massiiv[i] ja massiiv[j] vahel, siis Vasak = i + 1 ja Parem = j - 1  #Otsi keskmisest vahemikust
+    
+    Tagasta -1  #Kui ei leitud
+
+Võrreldes kahendotsinguga on kolmikotsinguga suurem vigade tõenäosus.
+Kahendotsingu puhul ei sobi väikesed massiivid ning on efektiivsem suuremate massiivide puhul.
+Küll aga on kahendotsing kiirem kui kolmikotsing väikeste andmekogumite puhul.
