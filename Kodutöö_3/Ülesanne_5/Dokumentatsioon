@@ -1,1 +1,9 @@
-
+Valisime reaalmaailma probleemiks sõna otsimise sõnaraamatust.
+Oletame, et sõnaraamatus on miljoneid sõnu ning kasutaja soovib leida mingi konkreetse sõna sõnaraamatust, sisestades otsinguväljale otsingusõna.
+Kuna sõnaraamatus on miljoneid sõnu, siis tuleks kasutada kiiret ning efektiivset otsingualgoritmi suurte mahtude puhul.
+Tavaliselt on sõnaraamatus sõnad tähestikuliselt järjestatud, seega saaksime kasutada otsingualgoritmi, mis toimib sorteeritud andmete puhul.
+Kõige parem valik oleks binaarotsingu algoritm, mis vähendaks otsinguvälja poole võrra iga sammuga.
+Binaarotsingu ajakompleksus on O(log n), mis muudab selle üheks kiireimaks algoritmiks, eriti suurte sõnaraamatute puhul.
+Binaarotsing ei nõua ka lisaruumi, kuna otsib sõna sõnaraamatust, mis antud juhul on justkui massiiv.
+Kui aga mängu tuleb sõnaraamatu täiendamine ehk sõnade lisamine ja eemaldamine, siis parim oleks lineaarotsing, kuna ta ei nõua sorteeritud andmeid.
+Küll aga suurte andmekogumite puhul muutub algoritm aeglaseks, sest kontrollib iga sõna sõnaraamatus.
