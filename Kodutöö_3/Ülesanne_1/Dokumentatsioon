@@ -1,1 +1,23 @@
+Lineaarotsing on otsingualgoritm, mis kontrollib järjestikku iga loendis olevat elementi.
+Alustab algusest ning võrdleb igat elementi sihiväärtusega.
+Ruumikeerukus on igal juhul sellel algoritmil O(1) ehk täiendavat ruumi ei vaja, kuna otsing toimub massiivis endas.
+
+lineaarotsingu algoritmi näide:
+
+# Massiiv ja sihtväärtus on defineeritud enne funktsiooni
+arr = [3, 5, 7, 9, 11]
+target = 7
+
+def lineaar_otsing(massiiv, sihtväärtus):
+    # Käime läbi iga elemendi massiivis
+    for index in range(len(arr)):
+        # Kui leiame otsitava elemendi, prindime selle ja lõpetame funktsiooni
+        if arr[index] == target:
+            print(f"Element {target} leiti indeksilt {index}.")
+            return
+    # Kui elementi ei leitud, anname sellest teada
+    print(f"Elementi {target} ei leitud.")
+
+# Käivitame lineaarotsingu funktsiooni
+linear_search(arr, target)
 
