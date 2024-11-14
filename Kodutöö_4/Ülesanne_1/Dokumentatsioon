@@ -1,20 +1,20 @@
-Räsimine ehk hashing on ühesuunaline funktsioon või protsess, mis muudab mistahes suurusega andmed fikseeritud suuruseks.
-Räsimise väljundit tuntakse räsi või räsi väärtustena.
-Räsimise eeliseks on see, et sellega saab andmete hankimist kiirendada.
-Räsitabel on andmestruktuur, mida kasutatakse räsimise rakendamiseks.
-Räsitabel salvestab salvestab võti-väärtuse paare.
-Andmed salvestatakse võti-väärtus paaridena.
-Võtmele rakendatakse räsifunktsiooni.
-Räsi väärtust kasutatakse andmete salvestamise indeksina.
-Räsifunktsiooni omadused:
+1. Räsimine ehk hashing on ühesuunaline funktsioon või protsess, mis muudab mistahes suurusega andmed fikseeritud suuruseks.
+  Räsimise väljundit tuntakse räsi või räsi väärtustena.
+  Räsimise eeliseks on see, et sellega saab andmete hankimist kiirendada.
+  Räsitabel on andmestruktuur, mida kasutatakse räsimise rakendamiseks.
+  Räsitabel salvestab salvestab võti-väärtuse paare.
+  Andmed salvestatakse võti-väärtus paaridena.
+  Võtmele rakendatakse räsifunktsiooni.
+  Räsi väärtust kasutatakse andmete salvestamise indeksina.
+2. Räsifunktsiooni omadused:
   1. Peab saama sisendi korral tagastama sama räsi väärtuse.
   2. Peab erinevate sisendite puhul  genereerima erinevaid räsi väärtusi.
   3. Peab räsi väärtusi ühtlaselt räsitabelis jaotama.
-Põrgete lahendamise põhilisemad tehnikad on eraldi aheldamine (Separate Chaining) ja avatud adresseerimine (Open aadressing).
-Järgnevalt vaatamegi neid tehnikaid lähemalt.
-Avatud aadresseerimine:
-  Tööpõhimõte: Kõik elemendid on salvestatud räsitabelis endas, sekundaarset andmestruktuuri pole.
-  Eelis: Säästab ruumi, väldib viite ülekoormust.
-Eraldi aheldamine:
-  Tööpõhimõte: Iga pilu räsitabelis on LinkedList.
-  Eelis: Võimaldab mitmel võtmel eksisteerida samas asukohas räsitabelis.
+3. Põrgete lahendamise põhilisemad tehnikad on eraldi aheldamine (Separate Chaining) ja avatud adresseerimine (Open aadressing).
+  Järgnevalt vaatamegi neid tehnikaid lähemalt.
+    Avatud aadresseerimine:
+      Tööpõhimõte: Kõik elemendid on salvestatud räsitabelis endas, sekundaarset andmestruktuuri pole.
+      Eelis: Säästab ruumi, väldib viite ülekoormust.
+    Eraldi aheldamine:
+      Tööpõhimõte: Iga pilu räsitabelis on LinkedList.
+      Eelis: Võimaldab mitmel võtmel eksisteerida samas asukohas räsitabelis.
