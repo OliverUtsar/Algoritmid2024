@@ -1,1 +1,24 @@
+2. 
+Ajaline Kompleksus:
+Separate Chaining: Enamasti O(1), halvimal juhul O(n), kui kõik elemendid satuvad ühte
+  linked-listi.
 
+Open Addressing: Enamasti O(1), halvimal juhul O(n), kui tabel on täis
+  ja peab otsima järgmisi vabu kohti.
+
+Ruumiline Kompleksus:
+Separate Chaining: Ruumikasutuse efektiivsus sõltub linked-listide arvust. 
+  Iga räsikoht võib vajada täiendavat ruumi.
+Open Addressing: Kasutab ainult räsitabeli ruumi, kuid võib vajada rohkem ruumi, 
+  et vältida kokkupõrkeid.
+
+3.
+Plussid:
+Lihtne rakendada: Linked-listide kasutamine on intuitiivne ja lihtne.
+Dünaamiline ruum: Saame lisada elemente ilma eelneva ruumi määramata.
+Kokkupõrkeid on lihtsam hallata, kuna iga räsikoht võib sisaldada mitut elementi.
+
+Miinused:
+Ruumikasutuse efektiivsus: Kui räsitabel on suur ja koormus madal, võib ruumi raisata.
+Aeglasem otsing: Halvimal juhul võib otsing olla aeglasem, kui kõik elemendid satuvad ühte linked-listi.
+Lisakulu: Iga linked-listi sõlme haldamine toob kaasa täiendava mälukulu.
