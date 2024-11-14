@@ -12,4 +12,26 @@
     Räsifunktsioon määrab iga võtme jaoks algse indeksi.
     Kui põrge tekib, liigub funktsioon järgmisele indeksile, kuni leitakse tühi koht.
   Ruuduline otsing ehk Quadratic Probing:
-    
+    Tegu on avatud aadresseerimise variatsiooniga.
+    Kasutab ruutfunktsiooni tühja koha leidmiseks põrke korral.
+    Räsifunktsioon määrab iga võtme jaoks algse indeksi.
+    Kui põrge tekib, liigub funktsioon indeksile, mis on väärtuse ruudu kaugusel.
+  Topelträsimine ehk Double hashing:
+    Tegu on teise avatud aadresseerimise variatsiooniga.
+    Kasutab ühe asemel kahte räsifunktsiooni.
+    Esimene räsifunktsioon määrab iga võtme jaoks algse indeksi.
+    Kui põrge tekib, määrab teine räsifunktsioon võtme jaoks uue indeksi.
+    Põrge jätkub seni, kuni leitakse tühi koht.
+3. Vaatleme nende kolme tehnika efektiivsust eri olukordades:
+    Lineaarne otsing:
+      Lihtne ja kiire väikeste andmekogumite puhul.
+      Kasutatakse tavaliselt siis, kui räsitabel ei täitu rohkem kui 50%.
+      Sobib rakendustesse, kus täituvus on püsiv ning ei kasva kiiresti.
+    Ruuduline otsing ehk Quadratic Probing:
+      Efektiivne keskmise suurusega tabelite puhul, kus täituvus võib kasvada 70%-ni.
+      Räsitabeli elementide jaotumine muutub rohkem hajutatuks.
+    Topelträsimine ehk Double Hashing:
+      Täituvus võib olla nendest tehnikatest suurim, ilma et see tekitaks jõudluse langemist.
+      Sobib kõige paremini suurte tabelite jaoks, kus andmete hajuvus on hea.
+  	  Kokkupõrked jaotuvad paremini.
+      
