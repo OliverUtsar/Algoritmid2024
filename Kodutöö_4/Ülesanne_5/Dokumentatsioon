@@ -1,1 +1,17 @@
+1.
+Vähem kokkupõrkeid, suudab hajutada andmeid paremini
+Dünaamilisem, kui esmane räsi on hõivatud siis arvutatakse uus indeks
 
+
+2.
+Ajakompleksus:
+Eamasti on O(1), kui tabel on piisavalt suur ja koormus on madal
+Halvimal juhul on O(n), kui on vaja kõik elemendid läbi käia, kuna kõik elemendid on sattunud ühte kohta
+
+Ruumiline kompleksus:
+Kompleksuseks loetakse O(n) kuna toppelt räsides ei nõuta täiendatavat ruumi, kuna kasutuses on sama tabel
+
+
+3.
+Topelt räsimine on efektiivne, kui on väga suur hulk andmeid, kus on väga palju kokkupõrkeid
+ja kui andmed on kaldunud ühte või mitmesse räsikohta, aitab neid hajutada paremini
