@@ -1,0 +1,28 @@
+KASUTATUD COPILOT-I ABI!
+
+class HashTable:
+    def __init__(self, size):
+        self.size = size
+        self.table = [None] * size
+
+    def hash1(self, key):
+        return hash(key) % self.size
+
+    def hash2(self, key):
+        return 1 + (hash(key) % (self.size - 1))
+
+    def insert(self, key, value):
+        index = self.hash1(key)
+        step = self.hash2(key)
+        while self.table[index] is not None:
+            index = (index + step) % self.size
+        self.table[index] = value
+
+    def search(self, key):
+        index = self.hash1(key)
+        step = self.hash2(key)
+        while self.table[index] is not None:
+            if self.table[index] == key:
+                return self.table[index]
+            index = (index + step) % self.size
+        return None
