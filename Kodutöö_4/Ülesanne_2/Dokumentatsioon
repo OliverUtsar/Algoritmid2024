@@ -1,1 +1,10 @@
+2.
+Ajakomplektsus: Kuna masiivi läbitakse ainult üks kord ja seda sisendmassiivi pikkusega,
+siis on ajaline keerukus O(n)
 
+Ruumikomplektsus: Ruumikompleksus on O(n), kus n on maksimaalne väärtus massiivis. 
+Halvimal juhul võib n olla väga suur, mis suurendab mälu tarbimist.
+
+3.
+Reaalses maailmas saab kasutada Mapping Indeksit näiteks korduvate arvude leidmiseks,
+Bloom filtrites (Suured andmekogumid) ja ka näiteks Frequency Counting-us(Andmete sageduse loendid)
