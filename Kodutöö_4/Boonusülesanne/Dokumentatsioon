@@ -1,1 +1,16 @@
-
+1. Räsitabeli koormustegur ehk Load Factor on räsitabelis salvestatud elementide arvu ja räsitabeli kogumahu suhe.
+  Koormustegur määrab, millal räsitabelit suurendada.
+  Näiteks, kui räsitabelisse suurusega 200 on salvestatud 100 võtit, on koormustegur 0,5.
+  Koormustegur mõjutab räsitabeli toimingute tõhusust.
+  Üldiselt on tõhususe säilitamiseks heaks koormusteguris umbes 0,7.
+2,3. Ümberhajutamine ehk Rehashing on räsitabeli suuruse muutmise ja kõigi võtmete sisestamise protsess.
+  Tööpõhimõte: Kõigile olemasolevatele võtmetele rakendatakse uut räsifunktsiooni.
+  Eeliseks on see, et see vähendab koormustegurit ning parandab efektiivsust.
+  Kui koormustegur ületab teatud lävendi, siis käivitatakse Rehashing.
+  Rehashing aitab säilitada tasakaalustatud koormusteguri.
+  Samuti tagab räsitabeli toimingute tõhususe.
+    Rehashingu rakendamise protsess:
+      1. Määrake, millal koormustegur ületab lävendi.
+      2. Looge suurema suurusega uus räsitabel.
+      3. Sisestage kõik võtmed vanast räsitabelist uude.
+  
