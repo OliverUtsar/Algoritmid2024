@@ -1,1 +1,15 @@
-
+1. Avatud aadresseerimine 
+  Võtme-väärtuse paari puhul on iga võti seotud unikaalse väärtusega
+  Räsifunktsiooni kasutatakse võtmete kaardistamiseks massiivi aadressidele.
+  Kui põrge tekib, leitakse võtmele uus aadress.
+  Põrget tehakse seni, kuni leitakse tühi koht.
+  Lisamälu pole vaja, kuna kasutab konstantseid ajafunktsioone.
+  Miinuseks on see, et on piiratud räsitabeli suurusega, jõudlus halneneb, kui räsitabel täitub.
+2. Vaatleme kolme põrgete lahendamise tehnikat: lineaarotsing, ruuduline otsing ja topelträsimine.
+  Lineaarne otsing ehk Linear Probing:
+    Lineaarse otsingu puhul on tegemist osa avatud aadresseerimise meetodist.
+    Kui põrge tekib, siis otsitakse järgmist saadaolevat kohta.
+    Räsifunktsioon määrab iga võtme jaoks algse indeksi.
+    Kui põrge tekib, liigub funktsioon järgmisele indeksile, kuni leitakse tühi koht.
+  Ruuduline otsing ehk Quadratic Probing:
+    
