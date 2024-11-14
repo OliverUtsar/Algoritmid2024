@@ -1,0 +1,20 @@
+def index_mapping(arr):
+    max_väärtus = max(arr)  #Leiame maksimaalse väärtuse
+    index_map = [0] * (max_väärtus + 1)  #Loodav massiiv, mille suurus on maksimaalne väärtus + 1
+
+    #Täidame kaardi
+    for num in arr:
+        index_map[num] = 1
+
+    return index_map
+
+#Kasutamine
+arr = [3, 0, 4, 1, 2, 99,70]
+index_map = index_mapping(arr)
+#print(index_map)  
+
+#Kontrollime, kas element 4 on olemas
+if index_map[70]:
+    print("Element on olemas")
+else:
+    print("Element puudub")
