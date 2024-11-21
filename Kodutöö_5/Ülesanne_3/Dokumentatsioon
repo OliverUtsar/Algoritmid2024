@@ -1,1 +1,14 @@
+1.
+BST on hierarhiline andmestruktuur, kus iga sõme puhul kehtib erinev omadus.
+  Vasak alluvussõlm sisaldab väärtust, mis on väiksem kui sõlme enda väärtus
+  Parem alluvussõlm sisaldab väärtust, mis on suurem kui sõlme enda väärtus
 
+  Põhielementideks on:
+    Sõlm- Andmeelement, mis sisaldab väärtust(key) ja viiteid vasakule ja paremale
+    Juhtsõlm- BST tipp sõlm, millest algab struktuur
+    Lehtsõlm- Sõlmed millel pole lapsi
+    Kõrgus- Max sügavusjuursõlmest lehtsõlmedeni
+
+2. 
+Kui BST on tasakaalustamata siis puu muutub lineaarseks ja operatsioonide keerukus muutub O(n)
+BST saab optimeerida kas kasutades AVL-puud, punase-musta puud ja B-puud.
