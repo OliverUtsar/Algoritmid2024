@@ -1,0 +1,55 @@
+class Sõlm:
+    #Binaarpuu vanemsõlm, mis sisaldab väärtust ja viiteid lastele
+    def __init__(self, väärtus):
+        self.väärtus = väärtus  #Sõlme väärtus
+        self.vasak = None  #Vasak alampuu
+        self.parem = None  #Parem alampuu
+
+class Binaarpuu:
+    #Loob binaarpuu andmestruktuuri, mis võimaldab andmeid järjestatud kujul salvestada
+    def __init__(self):
+        self.juur = None  #Puu juur
+
+    def lisa(self, väärtus):
+        #Lisab väärtuse puusse iteratiivselt
+        uus_sõlm = Sõlm(väärtus)
+        if not self.juur:  #Kui puu on tühi, tee juureks uus sõlm
+            self.juur = uus_sõlm
+            return
+
+        praegune = self.juur  #Alustame juurest
+        while True:  #Liigu vasakule või paremale, kuni leitakse vaba koht
+            if väärtus < praegune.väärtus:  #Kui väärtus on väiksem kui praeguse sõlme väärtus
+                if not praegune.vasak:  #Kui vasakul pool pole sõlme, lisa sinna uus sõlm
+                    praegune.vasak = uus_sõlm
+                    break
+                praegune = praegune.vasak  #Liigu vasakule
+            else:  #Kui väärtus on suurem või võrdne
+                if not praegune.parem:  #Kui paremal pool pole sõlme, lisa sinna uus sõlm
+                    praegune.parem = uus_sõlm
+                    break
+                praegune = praegune.parem  #Liigu paremale
+
+    def järjestatud_läbimine(self):
+        #Tagastab puu väärtused järjestatud järjekorras
+        virn, tulemused = [], []
+        praegune = self.juur #Alustame läbimist juurest
+
+        while virn or praegune:
+            if praegune:  #Liigu võimalikult vasakule
+                virn.append(praegune)  #Lisa praegune sõlm virna
+                praegune = praegune.vasak  #Liigu vasakule
+            else:  #Töötle sõlm ja liigu paremale
+                praegune = virn.pop()  #Võta viimane sõlm virnast
+                tulemused.append(praegune.väärtus)  #Lisa sõlme väärtus tulemuste listi
+                praegune = praegune.parem  #Liigu paremale
+
+        return tulemused  #Tagasta tulemuste list
+
+#Näide
+puu = Binaarpuu()
+for väärtus in [7, 4, 9, 2, 5, 8, 10]:  # Lisame väärtused
+    puu.lisa(väärtus)
+
+print("Järjestatud väärtused:", puu.järjestatud_läbimine())
+
