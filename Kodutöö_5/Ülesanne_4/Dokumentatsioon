@@ -1,1 +1,11 @@
+Punase-musta puu omadused:
+  Iga vanemsõlm on kas punane või must.
+  Puu juur on alati must.
+  Punasel sõlmel ei ole punaseid lapsi (kui vanemsõlm on punane, siis lapsed on mustad).
+  Uus lisatud sõlm on alati punane.
+  Iga tee juurest igale lehe sõlmele sisaldab sama arvu musti sõlmi.
+Nende omaduste eelisteks on tasakaalu tagamine läbi värvide ning otsingutoimingute optimeerimine.
+Punane-must puu on tõhusam kui binaarne otsingupuu, kuna tagatakse, et puu jääb tasakaalustatud isegi halvas sisendi järjekorras.
+Punane-must puu tasakaalustamine toimub värvimise põhjal.
+Pärast iga lisamist või kustutamist viiakse puu tasakaalu, et täita kaht reeglit: Punase sõlme reegel ja mustade sõlmede reegel.
 
