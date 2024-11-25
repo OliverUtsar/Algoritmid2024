@@ -7,8 +7,7 @@ b) Max-kuhja omadused:
   Kõige suurem element on puu juur.
 Mõlema struktuuri ajakeerukus kõikidel juhtudel on O(log n), sest sõlme lisamine kuhja võtab aega.
 Seejärel tuleb sõlm asetada õigesse kohta.
-Mõlema struktuuri ruumikeerukus on O(n), kus n on sõlmede arv.
-Iga sõlm salvestatakse puus ja iga sülme jaoks on vaid paar viidet (lastele) ja väärtus.
+Mõlema struktuuri ruumikeerukus on O(n), kus n on sõlmede arv ja iga sõlme jaoks on vaid paar viidet (lastele) ja väärtus.
 Kuhja struktuuri kasutamine on efektiivne, kus andmete lisamine ja eemaldamine tuleb teha kiirelt.
 Kuhja struktuuri kasutatakse prioriteetjärjekordade rakendustes.
 Kui tahame kõige kõrgema prioriteediga (suurima või väikseima väärtusega) elemendiga esmalt töötada.
