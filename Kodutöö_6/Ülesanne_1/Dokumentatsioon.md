@@ -1,5 +1,5 @@
 Läbimise üheks tehnikaks on Laius-esmalt otsing ehk Breadth-First Search (BFS).
-Algoritmi kood:
+# Algoritmi kood:
 
 from collections import deque
 
@@ -18,15 +18,15 @@ def Laius_otsing(graaf, algus):
 
     return tulemus
 
-Kujutame graafi:
+# Kujutame graafi:
 A --- B
 |     |
 C --- D
 
-Esitame selle graafi Pythonis sõnastikuna:
+# Esitame selle graafi Pythonis sõnastikuna:
 graaf = {"A" : ["B", "C"], "B" : ["A", "D"], "C" : ["A", "D"], "D" : ["B", "C"]}
 
-Saame kogu töötava koodi:
+# Saame kogu töötava koodi:
 
 from collections import deque
 
@@ -50,4 +50,4 @@ def Laius_otsing(graaf, algus):
 tulemus = Laius_otsing(graaf, "A")
 print("Laiusotsingu läbi vaadatud järjekord:", tulemus)
 
-Tulemuseks on "Laiusotsingu läbi vaadatud järjekord: ['A', 'B', 'C', 'D']"
+# Tulemuseks on "Laiusotsingu läbi vaadatud järjekord: ['A', 'B', 'C', 'D']"
