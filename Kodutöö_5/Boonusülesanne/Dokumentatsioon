@@ -1,1 +1,10 @@
+AVL-puu: Rangelt tasakaalustatud, otsingu kiirus = O(log n), lisamine/kustutamise kiirus = O(log n), rakendus- Indeksid, kus otsingud on kriitilised.
+Punase-musta puu: Ei ole väga rangelt tasakaalustatud, otsingu kiirus = O(log n), lisamine/kustutamise kiirus = O(log n), rakendused- Üldised rakendused
+Spray-puu: Ei garnteeri kõrgust, otsingu kiirus = O(log n), lisamine/kustutamise kiirus = O(log n), rakendus- Rakendused, kus korduv ligipääs samdele elementidele on tavaline
+B-puu: Väga rangelt tasakaalus, otsingu kiirus = Sobivam suurte andmemahtudega, lisamine/kustutamise kiirus = O(log n), rakendus - andmebaasid ja failisüsteemides
 
+Optimeerimine:
+AVL-puud sobivad kõige paremini, kui otsingu operatsioonid on kõige olulisemad.
+Punase-musta puud on praktilised, kui operatsioonide sagedus on tasakaalustatud.
+Splay-puud on efektiivsed, kui andmetele ligipääsu mustrid on ebaühtlased.
+B-puud on ideaalsed suurte andmehulkade haldamiseks, eriti kettapõhistes süsteemides.
