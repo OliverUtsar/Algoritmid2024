@@ -1,5 +1,5 @@
 Läbimise üheks tehnikaks on Laius-esmalt otsing ehk Breadth-First Search (BFS).
-_Algoritmi kood:_
+**Algoritmi kood:**
 
 from collections import deque
 
