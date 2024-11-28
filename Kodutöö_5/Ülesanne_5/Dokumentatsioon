@@ -1,1 +1,18 @@
-
+AVL puu on üks binaarsetest otsingupuudest.
+See jälgib balansifaktorit ja pöörab sõlmi, et säilitada tasakaalu.
+AVL puude omadused:
+  1. Vasaku ja parema alampuu kõrguste erinevus ehk balansifaktor on maksimaalselt 1.
+  2. AVL puu kõrgus on logaritmiline sõlmede arvust.
+  3. Otsingu, lisamise ja kustutamise operatsioonid võtavad aega O(log n).
+AVL puu ja punase-musta puu võrdlus:
+  1. Mõlemas puus toimub otsing kiirusega O(log n).
+  2. AVL puus on rohkem pööramisi, seega ka kõrgem tasakaalustamise kulu.
+  3. Punase-musta puul on lõdvemad tasakaalureeglid, see tähendab, et lisamine ja kustutamine on kiirem.
+  4. AVL puu vajab täiendavat ruumi balansifaktori hoidmiseks.
+  5. Punase-musta puu puhul kasutatakse vaid ühte bitti sõlme värvi määramiseks.
+  6. AVL puu balansifaktor ei tohi olla suurem kui 1 ja punase-musta puul suurem kui 2.
+Punase-musta puu algoritm on vähem kulukam ning sobib dünaamiliste rakenduste jaoks.
+Kus andmeid lisatakse ja eemaldatakse sageli.
+AVL puu algoritm on rohkem tasakaalustatud, sobib hästi sõnaraamatute otsingualgoritmiks.
+AVL puu on eelistatav rakendustes, kus otsingutoimingud on sagedasemad kui lisamine ja kustutamine.
+AVL puu madalam kõrgus tagab kiiremad otsingud.
