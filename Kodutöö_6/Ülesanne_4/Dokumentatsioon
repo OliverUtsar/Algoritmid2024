@@ -1,1 +1,21 @@
+Bellman-Fordi algoritmi ja selle erinevust Dijkstra algoritmist:
+  Bellman-Ford toetab negatiivseid kaalusid, aga Djikstra ei toeta
+  Bellmann-Fordil on iteratiivne lõdvendamine kõigi servade jaoks, aga Dijkstral on prioriteedijärjekord
+  Keerukus on Bellman-Fordil O(V⋅E) ja Dijkstral on O((V+E)logV)
+  Kiirus on Bellman-Fordil aeglasem kui Dijkstral
 
+
+Kuidas Bellman-Fordi algoritm suudab tuvastada negatiivseid tsükleid graafides ja milline on selle praktiline tähtsus:
+  Algoritmi põhiosa koosneb V−1 iteratsioonist, mille jooksul lõdvendatakse kõiki graafi servi. See on piisav, et tagada, et iga lühim tee, mis ei sisalda tsükleid, leitakse.
+  Kui graafis puuduvad negatiivse kaalu tsüklid, on pärast V−1 iteratsiooni kõikide tippude lühimad teed lõplikud.
+  Pärast V−1 iteratsiooni tehakse üks lisakontroll, kus lõdvendatakse kõiki servi veel üks kord.
+  Kui mõne serva kaalu on võimalik pärast V−1 iteratsiooni veelgi vähendada, tähendab see, et on olemas negatiivse kaalu tsükkel, kuna selle tsükli kaudu on võimalik lõpmatult "parandada" teekonna kaalu.
+
+Praktiline tähtsus: 
+  Tarkvara ja planeerimine:
+  Negatiivsed tsüklid võivad tähendada ebareaalseid piiranguid või vigaseid sisendandmeid.
+  Dünaamilised süsteemid:
+  Negatiivsed tsüklid võivad tähendada ebastabiilsust dünaamilistes süsteemides, näiteks liikluses, turumajanduses või ressursijaotuses.
+  Võrguteooria:
+  Voogvõrkudes ja optimeerimisprobleemides võib negatiivse tsükli olemasolu tähendada lahenduse ebastabiilsust või vastuolu (nt energiavõrkudes või transpordivõrkudes).
+  Kui süsteemil on tsükkel, mis muudab kogumaksumuse lõpmatult väiksemaks, on vajalik probleemi uuesti formuleerimine.
