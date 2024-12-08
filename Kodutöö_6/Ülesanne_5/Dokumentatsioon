@@ -1,1 +1,11 @@
+Graafide värvimise probleemi olemust ja selle tähtsust arvutiteaduses:
+  Probleem seisneb selles, et kuidas graafi tippude värvid määrata nii, et ükski naabertipp poleks omavahel ühendatud sama värvi.
 
+  Tähtsus arvutiteaduses:
+    Kasutatakse ressursside optimmerimisel, võrkude plannerimisel, ajakavade koostamisel ja ka kaasaegses tehisintellektis ja selle optimeerimises
+
+Kuidas graafide värvimist saab kasutada ressursside jaotamise ja konfliktide lahendamise probleemides:
+  Ajagraafikute koostamisel:
+    Iga sündmus on graafi tipp, servades esinevad konfliktid ja tippude värvimine vastab ajavahemikule, mis määrab erinevad ajapilud
+  Võrgusageduse jaotumine:
+    Tippudeks on tugijaamad, mis vajavad sagedusi. Servades on tugijaamad, mille signaalid kattuvad ja värvimisel jaotatakse sagedused nii, et kõrvuti olevad tugijaamad oleksid erinevate sagedustega.
