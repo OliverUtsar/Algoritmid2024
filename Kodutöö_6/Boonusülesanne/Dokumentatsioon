@@ -1,1 +1,17 @@
-**Kirjelda P vs NP probleemi olemust ja selle tähtsust arvutiteaduses**
+P tähistab probleeme, mida saab lahendada polünoomse keerukusega algoritmidega.
+See tähendab, et ülesande lahendamiseks vajalike sammude arv on mingi funktsioon sisendi suurusest.
+NP tähistab probleeme, mille lahendust saab kontrollida polünoomses ajas.
+Kui suudetakse tõestada, et P = NP, tähendab see, et kõikide probleemide lahendamine on kiire.
+Kui aga P ei võrdu NP-ga, siis on probleem keeruline, mida on võimatu kiiresti lahendada.
+
+Kui P = NP:
+siis aitaksid keeruliste probleemide lahendamine kaasa algoritmide optimeerimisele.
+P vs NP probleemi lahendamine tooks logistika ettevõtetele kiiremaid tulemusi, sest probleemid laheneksid kiiresti.
+NP probleemid, nagu suurte andmekogumite optimeerimine, muutuksid lihtsamaks.
+Meditsiinis aitaks NP probleemide lahendamine kaasa meditsiiniliste läbimurreteni jõudmine.
+Füüsikas ja keemias oleks võimalik lahendada praegu lahendamatuna tunduvaid probleeme.
+Kui P ei võrdu NP-ga:
+Näiteks praegused krüptosüsteemid jääksid turvaliseks, tugevdades süsteemide töökindlust ning vastupidavust rünnakutele.
+Uurimistöö keskenduks keeruliste probleemide ligikaudsele lahendamisele, kuna täpsed lahendused on praktiliselt võimatud.
+
+
